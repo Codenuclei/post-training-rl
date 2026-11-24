@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 600" width="100%" height="100%" style="background-color: #FAF8F5; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;">
+  <defs>
+    <!-- Soft watercolor blur filters -->
+    <filter id="water-bleed" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="3" result="noise" />
+      <feDisplacementMap in="blur" in2="noise" scale="6" xChannelSelector="R" yChannelSelector="G" />
+    </filter>
+    <filter id="light-bleed" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+    </filter>
+
+    <!-- Watercolor Wash Gradients -->
+    <radialGradient id="wash-peach" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FF8A65" stop-opacity="0.45" />
+      <stop offset="60%" stop-color="#FFAB91" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#FAF8F5" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="wash-sage" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#80CBC4" stop-opacity="0.45" />
+      <stop offset="70%" stop-color="#B2DFDB" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FAF8F5" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="wash-blue" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#90CAF9" stop-opacity="0.5" />
+      <stop offset="70%" stop-color="#BBDEFB" stop-opacity="0.2" />
+      <stop offset="100%" stop-color="#FAF8F5" stop-opacity="0" />
+    </radialGradient>
+
+    <radialGradient id="wash-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#CE93D8" stop-opacity="0.4" />
+      <stop offset="70%" stop-color="#E1BEE7" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#FAF8F5" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Sketchy arrow -->
+    <marker id="ink-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1E293B" />
+    </marker>
+    <marker id="orange-arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#E65100" />
+    </marker>
+  </defs>
+
+  <!-- Ambient watercolor paper texture / washes in background -->
+  <circle cx="220" cy="280" r="180" fill="url(#wash-peach)" filter="url(#water-bleed)" />
+  <circle cx="700" cy="190" r="160" fill="url(#wash-blue)" filter="url(#water-bleed)" />
+  <circle cx="680" cy="440" r="150" fill="url(#wash-purple)" filter="url(#water-bleed)" />
+  <circle cx="460" cy="300" r="140" fill="url(#wash-sage)" filter="url(#water-bleed)" />
+
+  <!-- Title Header (Warm Ink Callout) -->
+  <g transform="translate(35, 30)">
+    <path d="M 0 35 Q 200 32 450 35" stroke="#1E293B" stroke-width="1.5" stroke-dasharray="3 3" fill="none" opacity="0.3" />
+    <text x="5" y="24" font-size="22" font-weight="600" fill="#0F172A" letter-spacing="0.5">🌿 Watercolor Narrative: The 3 Core Intuitions of RL</text>
+    <text x="660" y="24" font-size="12" font-style="italic" fill="#64748B">Style: threerocks / 情绪叙事淡彩速写</text>
+  </g>
+
+  <!-- ================= LEFT COLUMN: ADVANTAGE (A = Q - V) ================= -->
+  <g transform="translate(35, 75)">
+    <!-- Main Card Backdrop with soft watercolor ink borders -->
+    <rect x="0" y="0" width="415" height="480" rx="16" fill="#FFFFFF" fill-opacity="0.82" stroke="#334155" stroke-width="1.2" stroke-opacity="0.4" />
+    
+    <!-- Title Badge -->
+    <rect x="18" y="18" width="235" height="28" rx="6" fill="#FFF3E0" stroke="#FFB74D" stroke-width="1" />
+    <text x="28" y="37" font-size="13" font-weight="600" fill="#E65100">1. Advantage (A = Q - V)</text>
+    <text x="20" y="66" font-size="12" fill="#475569" font-style="italic">"Measuring pure jump height above the room's floor"</text>
+
+    <!-- Watercolor Wash under the floor -->
+    <rect x="25" y="280" width="365" height="85" rx="8" fill="#ECEFF1" opacity="0.75" />
+    <line x1="20" y1="280" x2="395" y2="280" stroke="#334155" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Floor Label -->
+    <text x="35" y="308" font-size="14" font-weight="600" fill="#334155">State Baseline Floor: V = 100 pts</text>
+    <text x="35" y="328" font-size="11.5" fill="#64748B">"What your bot normally gets just by being here"</text>
+
+    <!-- Botanical / Ink-style Stick Figure Agent -->
+    <g transform="translate(65, 205)">
+      <!-- Soft aura under character -->
+      <ellipse cx="20" cy="72" rx="18" ry="4" fill="#0F172A" opacity="0.15" />
+      <!-- Head with gentle ink line -->
+      <circle cx="20" cy="20" r="13" fill="#FFFFFF" stroke="#1E293B" stroke-width="1.8" />
+      <circle cx="16" cy="18" r="1.5" fill="#1E293B" />
+      <circle cx="23" cy="18" r="1.5" fill="#1E293B" />
+      <!-- Soft coral cheek blush (Characteristic of Style 10) -->
+      <circle cx="13" cy="22" r="3.5" fill="#FF8A65" opacity="0.55" />
+      <circle cx="26" cy="22" r="3.5" fill="#FF8A65" opacity="0.55" />
+      <!-- Gentle smile -->
+      <path d="M 17 24 Q 20 26 23 24" stroke="#1E293B" stroke-width="1.5" fill="none" stroke-linecap="round" />
+      <!-- Torso & Limbs with organic sketch lines -->
+      <line x1="20" y1="33" x2="20" y2="54" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="20" y1="41" x2="6" y2="48" stroke="#1E293B" stroke-width="1.6" stroke-linecap="round" />
+      <line x1="20" y1="41" x2="34" y2="48" stroke="#1E293B" stroke-width="1.6" stroke-linecap="round" />
+      <line x1="20" y1="54" x2="11" y2="72" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+      <line x1="20" y1="54" x2="29" y2="72" stroke="#1E293B" stroke-width="1.8" stroke-linecap="round" />
+      <text x="-5" y="-3" font-size="11" font-weight="600" fill="#334155">Current Bot</text>
+    </g>
+
+    <!-- Upward Action Arc (The Jump) in warm vibrant coral -->
+    <path d="M 115 240 Q 185 110 255 140" fill="none" stroke="#E65100" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 3" marker-end="url(#orange-arrow)" />
+    
+    <!-- Watercolor Star Blossom at Landing -->
+    <circle cx="262" cy="135" r="14" fill="#FFCCBC" stroke="#FF5722" stroke-width="1.5" />
+    <text x="256" y="140" font-size="13">✨</text>
+    
+    <!-- Vertical Dimension Bracket for +Advantage -->
+    <line x1="290" y1="135" x2="290" y2="280" stroke="#E65100" stroke-width="2" stroke-linecap="round" />
+    <line x1="284" y1="135" x2="296" y2="135" stroke="#E65100" stroke-width="1.5" />
+    <line x1="284" y1="280" x2="296" y2="280" stroke="#E65100" stroke-width="1.5" />
+
+    <text x="304" y="195" font-size="13" font-weight="700" fill="#E65100">+Advantage</text>
+    <text x="304" y="212" font-size="11.5" font-weight="600" fill="#BF360C">= +50 pts</text>
+    <text x="304" y="232" font-size="10.5" fill="#546E7A">Total Q = 150</text>
+    <text x="304" y="246" font-size="10.5" fill="#78909C">(150 - 100)</text>
+
+    <!-- Downward Blunder Action -->
+    <path d="M 95 270 Q 125 390 190 380" fill="none" stroke="#90A4AE" stroke-width="1.8" stroke-dasharray="3 3" />
+    <text x="200" y="385" font-size="11.5" fill="#546E7A">Move B: Q = 30 (Advantage = -70)</text>
+
+    <!-- Soft Watercolor Moral Footer -->
+    <rect x="20" y="418" width="375" height="44" rx="8" fill="#F1F8E9" stroke="#AED581" stroke-width="1" />
+    <text x="32" y="437" font-size="11.5" font-weight="600" fill="#33691E">🌸 Insight:</text>
+    <text x="32" y="452" font-size="11" fill="#33691E">Even with positive score, falling below the room's floor is penalized.</text>
+  </g>
+
+  <!-- ================= RIGHT COLUMN: TD ERROR & EXPECTATION ================= -->
+  <g transform="translate(470, 75)">
+    <!-- Main Card Backdrop -->
+    <rect x="0" y="0" width="415" height="480" rx="16" fill="#FFFFFF" fill-opacity="0.82" stroke="#334155" stroke-width="1.2" stroke-opacity="0.4" />
+
+    <!-- SECTION 2: TD ERROR (THE SURPRISE BELL) -->
+    <g transform="translate(18, 18)">
+      <rect x="0" y="0" width="250" height="28" rx="6" fill="#E0F2FE" stroke="#7DD3FC" stroke-width="1" />
+      <text x="10" y="19" font-size="13" font-weight="600" fill="#0369A1">2. TD Error: Real-Time Surprise</text>
+
+      <!-- Step t Guess Capsule -->
+      <g transform="translate(5, 42)">
+        <rect x="0" y="0" width="135" height="58" rx="10" fill="#F0F9FF" stroke="#0284C7" stroke-width="1.4" />
+        <text x="12" y="24" font-size="11" font-weight="600" fill="#0369A1">Step 1 Guess:</text>
+        <text x="12" y="44" font-size="12.5" font-weight="700" fill="#0284C7">"Predict 40 pts"</text>
+      </g>
+
+      <!-- Transition Arrow -->
+      <line x1="150" y1="71" x2="195" y2="71" stroke="#334155" stroke-width="1.8" marker-end="url(#ink-arrow)" />
+      <text x="154" y="63" font-size="10" fill="#64748B">1 tick</text>
+
+      <!-- Step t+1 Reality Capsule -->
+      <g transform="translate(205, 42)">
+        <rect x="0" y="0" width="165" height="58" rx="10" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.4" />
+        <text x="12" y="23" font-size="11" font-weight="600" fill="#B45309">Coin found: +10</text>
+        <text x="12" y="43" font-size="11" font-weight="600" fill="#B45309">Next room look: +50</text>
+      </g>
+
+      <!-- Surprise Calculation Arc with Mint/Teal wash -->
+      <path d="M 285 110 Q 185 165 65 110" fill="none" stroke="#0D9488" stroke-width="2.2" stroke-dasharray="4 3" marker-end="url(#ink-arrow)" />
+      <rect x="90" y="125" width="190" height="30" rx="6" fill="#CCFBF1" stroke="#5EEAD4" stroke-width="1" />
+      <text x="100" y="145" font-size="11.5" font-weight="700" fill="#0F766E">Surprise = (60) - 40 = +20!</text>
+    </g>
+
+    <!-- Soft Divider -->
+    <line x1="20" y1="230" x2="395" y2="230" stroke="#CBD5E1" stroke-width="1" stroke-dasharray="3 3" />
+
+    <!-- SECTION 3: EXPECTATION vs MAX -->
+    <g transform="translate(18, 245)">
+      <rect x="0" y="0" width="240" height="28" rx="6" fill="#F3E8FF" stroke="#D8B4FE" stroke-width="1" />
+      <text x="10" y="19" font-size="13" font-weight="600" fill="#7E22CE">3. Expectation vs. Max (ArgMax)</text>
+
+      <!-- Fork Paths -->
+      <g transform="translate(10, 45)">
+        <!-- Node S -->
+        <circle cx="25" cy="50" r="9" fill="#1E293B" />
+        <text x="12" y="75" font-size="11" font-weight="600" fill="#334155">Room S</text>
+
+        <!-- Path 1 (Average/Mediocre) -->
+        <path d="M 35 45 Q 90 20 170 20" fill="none" stroke="#94A3B8" stroke-width="1.6" />
+        <text x="180" y="24" font-size="11.5" fill="#64748B">Move 1 (Score: 10)</text>
+
+        <!-- Path 2 (The Golden Max Path) -->
+        <path d="M 35 50 L 170 50" fill="none" stroke="#9333EA" stroke-width="3" stroke-linecap="round" marker-end="url(#ink-arrow)" />
+        <text x="180" y="54" font-size="12" font-weight="700" fill="#9333EA">Move 2 (Score: 90) ⭐ MAX</text>
+
+        <!-- Path 3 (Poor) -->
+        <path d="M 35 55 Q 90 80 170 80" fill="none" stroke="#94A3B8" stroke-width="1.6" />
+        <text x="180" y="84" font-size="11.5" fill="#64748B">Move 3 (Score: -20)</text>
+
+        <!-- Comparative Explanation -->
+        <rect x="0" y="102" width="365" height="55" rx="8" fill="#FAF5FF" stroke="#E9D5FF" stroke-width="1" />
+        <text x="12" y="122" font-size="11" fill="#6B21A8">🍃 <tspan font-weight="700">Expectation (Average):</tspan> (10 + 90 - 20) / 3 = 26.6 (Aimless wandering)</text>
+        <text x="12" y="142" font-size="11" fill="#6B21A8">🔥 <tspan font-weight="700">Max / ArgMax (Peak):</tspan> Lock onto Move 2 = 90! (Pure optimal play)</text>
+      </g>
+    </g>
+  </g>
+</svg>

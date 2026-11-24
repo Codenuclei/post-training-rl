@@ -1,0 +1,254 @@
+{
+  "main": {
+    "id": "4a7dca8aaf965a24",
+    "type": "split",
+    "children": [
+      {
+        "id": "777c0ed847410a78",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "743f3904d2503c3c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "MODERN_RL_MASTER_MANUAL.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "MODERN_RL_MASTER_MANUAL"
+            }
+          },
+          {
+            "id": "e73e88af22eadd5f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "manual_chunks/part4_agentic_multimodal_appendices.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "part4_agentic_multimodal_appendices"
+            }
+          },
+          {
+            "id": "b71910069d6252cd",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "fcf4151828c76977",
+    "type": "split",
+    "children": [
+      {
+        "id": "3b8a61e0e17a0f22",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f055a94483bc3c2b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "4778686cbce871b7",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "0d69a28de11b081a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a50b37e504607875",
+    "type": "split",
+    "children": [
+      {
+        "id": "65e3d68d833d88d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dd45638ad33908e0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "b436db7e568a7ff8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "ed5a91a793e24471",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "5b9663a4ec835bbf",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d58497dfff635608",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "e73e88af22eadd5f",
+  "lastOpenFiles": [
+    "manual_chunks/part1_classical_deep_rl.md",
+    "en/preface/introduction.md",
+    "docs/chapter01_cartpole/training.md",
+    "docs/chapter01_cartpole/principles.md",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/taxi-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/pendulum-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/mountaincarcontinuous-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/mountaincar-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/gridworld-policy.png",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/frozenlake-policy.png",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/cartpole-dqn-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/cartpole-ppo-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/cliffwalking-trained.gif",
+    "modelscope-space/hands-on-modern-rl-experiment-gymnasium/assets/previews/blackjack-policy.png",
+    "code/chapter-notebooks/README.md",
+    "code/chapter-notebooks/en/agentic-code.md",
+    "docs/en/labs/index.md",
+    "docs/en/preface/brief-history/index.md",
+    "docs/en/preface/env-setup.md",
+    "docs/en/index.md",
+    "en/preface",
+    "en",
+    "docs/en/chapter26_vlm/easyr1-geoqa.md",
+    "docs/preface/introduction.md",
+    "docs/preface/env-setup.md",
+    "docs/index.md",
+    "MODERN_RL_MASTER_MANUAL.md",
+    "docs/chapter26_vlm/qwen3-vl-reflection.md",
+    "docs/chapter26_vlm/easyr1-geoqa.md",
+    "Photogenic 4.md",
+    "docs/appendix_gpu_hours/gpu-hours-estimation.md",
+    "docs/appendix_industrial_training/training-debugging.md",
+    "docs/appendix_industrial_training/monitoring.md",
+    "docs/appendix_code_cheatsheet/top-k-top-p.md",
+    "docs/appendix_code_cheatsheet/softmax-ce.md",
+    "docs/appendix_code_cheatsheet/sft-kl.md",
+    "docs/appendix_code_cheatsheet/ppo-gae.md",
+    "docs/appendix_code_cheatsheet/grpo-rlvr.md"
+  ]
+}
