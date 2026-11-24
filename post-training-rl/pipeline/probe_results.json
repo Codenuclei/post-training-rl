@@ -1,0 +1,27 @@
+{
+  "model": "Qwen3.5-9B",
+  "gpu": "L40S",
+  "probe_method": "enable_thinking=False, direct formula prompt",
+  "note": "Keyword scores are misleading - model outputs pure LaTeX, not English prose. Manual review shows ALL formulas are correct.",
+  "manual_review": {
+    "number_theory_euler": {"response": "a^{φ(n)} ≡ 1 (mod n)", "correct": true},
+    "number_theory_legendre": {"response": "1 + (a/p)", "correct": true},
+    "combinatorics_inclusion_exclusion": {"response": "proper union formula with (-1)^{|I|-1}", "correct": true},
+    "combinatorics_catalan": {"response": "1/(n+1) * C(2n,n) = sum C_k C_{n-1-k}", "correct": true},
+    "algebra_determinant": {"response": "sum over S3 of sgn(σ) prod A_{i,σ(i)}", "correct": true},
+    "algebra_cayley_hamilton": {"response": "p_A(λ) = det(A - λI), p_A(A) = 0", "correct": true},
+    "calculus_taylor_lagrange": {"response": "f(x) = sum f^(k)(a)/k! (x-a)^k + R_n with f^(n+1)(c)/(n+1)!", "correct": true},
+    "real_analysis_cauchy_schwarz": {"response": "(∫fg)² ≤ (∫f²)(∫g²)", "correct": true},
+    "real_analysis_arzela_ascoli": {"response": "relatively compact iff uniformly bounded and equicontinuous", "correct": true},
+    "complex_analysis_cauchy_nth": {"response": "f^(n)(a) = n!/2πi ∮ f(z)/(z-a)^(n+1) dz", "correct": true},
+    "complex_analysis_residue": {"response": "∮ f(z) dz = 2πi sum Res(f, z_k)", "correct": true},
+    "differential_equations_integrating_factor": {"response": "μ(x) = e^{∫P dx}, y = 1/μ (∫μQ dx + C)", "correct": true},
+    "differential_equations_complex_roots": {"response": "e^{αx}(C1 cos βx + C2 sin βx)", "correct": true},
+    "functional_equations_cauchy": {"response": "f(x) = cx", "correct": true},
+    "trigonometry_sum_sines": {"response": "sin(nx/2) sin((n+1)x/2) / sin(x/2)", "correct": true},
+    "sequences_series_ratio_test": {"response": "L<1 converge, L>1 diverge, L=1 inconclusive", "correct": true},
+    "linear_algebra_rank_nullity": {"response": "rank(T) + nullity(T) = dim(V)", "correct": true}
+  },
+  "overall_formula_accuracy": "17/17 correct (100%)",
+  "decision": "Model knows all Putnam-level formulas. Formula sheet is optional as a tool-use convenience, not required for knowledge."
+}

@@ -1,0 +1,36 @@
+You are a mathematics expert helping create a formula sheet for the Putnam competition.
+
+Based on the analysis of the Putnam-AXIOM dataset, here are the topic distributions:
+- putnam (modified boxing): 27 problems
+- putnam: 23 problems
+
+Please generate a comprehensive formula sheet in JSON format with the following structure:
+
+{
+  "topic_name": [
+    {
+      "name": "Formula name",
+      "formula": "Mathematical formula in text form",
+      "conditions": "When this formula applies",
+      "example": "Brief example if helpful"
+    }
+  ]
+}
+
+Focus on these key topics based on the dataset analysis:
+- Number theory (modular arithmetic, primes, congruences)
+- Combinatorics (counting, permutations, combinations)
+- Algebra (inequalities, polynomials, matrices)
+- Calculus (integration, differentiation, limits)
+- Real analysis (convergence, continuity, compactness)
+- Complex analysis (residues, contour integration)
+- Geometry (Euclidean, analytic)
+- Linear algebra (eigenvalues, determinants, transformations)
+
+For each formula, provide:
+1. A clear name
+2. The mathematical formula in text form (use ^ for exponents, * for multiplication, / for division)
+3. The conditions under which it applies
+4. A brief example if it helps clarify the formula
+
+Return ONLY valid JSON, no markdown formatting, no explanations.
